@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            height: 100vh;
+            gap:5px;
+            grid-template-columns:repeat(6,100px);
+            grid-template-rows:100px 100px 100px;
+
+        }
+        .container > *{
+            color:white;
+            background-color: aqua;
+            text-align: center;
+            font-size: 30px;
+          
+        }
+        .items1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: red;
+        }
+        .items7{
+            grid-column-start: 3;
+            grid-column-end: 6;
+            background-color: #ef3b74;
+        }
+        .items3{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: chocolate;
+        }
+        .items2{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color:#6ad97d;
+        }
+        .items6{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color:rgb(255, 6, 218);
+        }
+        .items5{
+            grid-row-start:2 ;
+            grid-row-end: 4;
+            background-color: #21de40;
+        }
+        .items4{
+            grid-row-start:2 ;
+            grid-row-end: 3;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="items1"></div>
+    <div class="items2"></div>
+    <div class="items3"></div>
+    <div class="items4"></div>
+    <div class="items5"></div>
+    <div class="items6"></div>
+    <div class="items7"></div>
+</body>
+</html>

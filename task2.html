@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container > *{
+       color: white;
+       font-size: 30px;
+       text-align: center;
+
+    }
+    .container{
+        display: grid;
+        height:100vh;
+        gap:10px;
+        grid-template-rows:repeat(3,100px);
+        grid-template-columns:repeat(8,100px)
+    }
+    .item1{
+        grid-row: 1;
+        grid-row-end: 4;
+        background-color: #6e9601;
+    }
+    .item2{
+        grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start: 1;
+        grid-row-end:2;
+        background-color: #6e9601;
+    }
+    .item3{
+        grid-row:2;
+        grid-row-end:3;
+        grid-column-start:2;
+        grid-column-end:3;
+        background-color: rgb(253, 184, 19);
+    }
+    .item4{
+        grid-row-start:3;
+        grid-row-end: 4;
+        background-color:#d50916;
+    }
+    .item5{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color:#d50916;
+    }
+    .item6{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color:#d50916;
+    }
+    .item7{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color:#6e9601;
+    }
+    .item8{
+        grid-row-start:3 ;
+        grid-row-end: 4;
+        background-color: rgb(240, 172, 12);
+    }
+</style>
+<body class="container">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+    <div class="item7"></div>
+    <div class="item8"></div>
+</body>
+</html>
